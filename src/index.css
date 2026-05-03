@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrollbar personalizado para el sidebar */
+/* Ocultar scrollbar completamente pero mantener funcionalidad */
+.scrollbar-hidden {
+  /* Firefox */
+  scrollbar-width: none;
+  /* Safari y Chrome */
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
